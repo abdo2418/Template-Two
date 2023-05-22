@@ -503,6 +503,7 @@ header .form {
 }
 .video-section video {
   max-width: 100%;
+  display: block; /* Just add display: block to the video element. video elements default to display: inline, causing the whitespace*/ 
 }
 .video-section .text {
   width: 100%;
@@ -533,5 +534,23 @@ header .form {
   color: white;
   text-transform: uppercase;
 }
-
 /* End Video Section */
+/* Start About Us */
+.about {
+  padding-top: var(--section-padding);
+  overflow: hidden; 
+  text-align: center;
+}
+.about .container img {
+  position: relative;
+  bottom: -120px;
+  margin-top: -120px;
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  .about .container img {
+    bottom: -60px;
+    margin-top: -60px;
+  }
+}
+/* End About Us */
