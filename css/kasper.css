@@ -614,3 +614,120 @@ header .form {
   font-size: 14px;
 }
 /* End Statistic Section */
+/* Start Skills */
+.skills {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.skills .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skills .container > div {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .skills .container > div {
+    flex-basis: 45%;
+  }
+}
+.skills .container > div > h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.skills .container > div > h3 + p {
+  line-height: 2;
+  text-align: center;
+  color: var(--p-color, #777);
+  margin-bottom: 60px;
+}
+.skills .container .testimonials .people {
+  display: flex;
+  justify-content: space-between;
+}
+.skills .container .testimonials .people img {
+  width: 100px;
+  border-radius: 50%;
+  align-self: flex-start;
+}
+.skills .container .testimonials .people p {
+  line-height: 1.6;
+  flex-basis: 70%;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #CCC;
+}
+@media (max-width: 767px) {
+  .skills .container .testimonials .people {
+    flex-direction: column;
+    text-align: center;
+  }
+  .skills .container .testimonials .people img {
+    margin: 0 auto 20px;
+  }
+  .skills .container .testimonials .people p {
+    flex-basis: 100%;
+  }
+}
+.skills .container .testimonials .people p::after {
+  content: "John Doe, CEO";
+  display: block;
+  color: var(--p-color, #777);
+  text-align: right;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.skills .testimonials ul.bullets {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 1%;
+  transform: translateX(-50%);
+}
+.skills .testimonials ul.bullets li {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.skills .testimonials ul.bullets li.active {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+@media (max-width: 992px) {
+  .skills .our-skills {
+    margin-top: 20px;
+  }
+}
+.skills .our-skills .prog-holder h4 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+.skills .our-skills .prog-holder .prog {
+  height: 30px;
+  background-color: #dedadc;
+  margin-bottom: 30px;
+}
+.skills .our-skills .prog-holder .prog span {
+  background-color: var(--main-color);
+  display: block;
+  height: 100%;
+  position: relative;
+}
+.skills .our-skills .prog-holder .prog span::before {
+  content: attr(data-progress);
+  background-color: black;
+  padding: 2.5px 5px 10px;
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: -100%;
+  left: 100%;
+  transform: translateX(-50%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 70% 80%, 50% 100%, 30% 80%, 0 80%);
+  }
+  /* End Skills */
