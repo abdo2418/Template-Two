@@ -1027,3 +1027,48 @@ header .form {
     line-height: 1.6;
   }
   /* End Contact */
+  /* Start Footer */
+  footer {
+    padding-top: calc(var(--section-padding) + 20px );
+    padding-bottom: calc( var(--section-padding) - 70px ) ;
+    background-color: black; /* FallBack for Background Image */
+    background-image: url("../images/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+  }
+  footer::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0 0 0 / 40%);
+  }
+  footer .content {
+    position: relative;
+    color: white;
+  }
+  footer .content p:not(:last-of-type) {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+    width: fit-content;
+    margin:0 auto 20px;
+    padding:40px 40px 20px;
+    border-bottom: 1px solid white;
+  }
+  footer .content .social-icons i {
+    color: white;
+    margin-right: 25px;
+  }
+  footer .content p:last-of-type {
+    margin-top: 80px;
+    font-weight: bold;
+  }
+  footer .content p:last-of-type span {
+    color: var(--main-color);
+  }
+  /* End Footer */
