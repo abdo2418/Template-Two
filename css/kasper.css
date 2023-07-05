@@ -945,3 +945,85 @@ header .form {
     line-height: 2;
   }
   /* End Subscribe */
+  /* Start Contact */
+  .contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+  }
+  .contact .container .content {
+    display: flex;
+    gap: 40px;
+  }
+  @media (max-width: 767px) {
+    .contact .container .content {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .contact .container .content form {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact .container .content form .main-input {
+    display: block;
+    padding: 20px;
+    margin-bottom: 40px;
+    border: 1px solid #dedadc;
+    caret-color: var(--main-color);
+  }
+  .contact .container .content form textarea.main-input:only-of-type {
+    height: 200px;
+  }
+  .contact .container .content form .main-input:focus {
+    outline: none;
+  }
+  .contact .container .content form .main-input::placeholder {
+    color: black;
+    text-transform: uppercase;
+  }
+  .contact .container .content form input[type="submit"] {
+    color: white;
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    border: none;
+    padding: 30px 60px;
+    width: fit-content;
+    margin-top: 30px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  @media (max-width: 767px) {
+    .contact .container form input[type="submit"] {
+      margin: 30px auto 0;
+    }
+    .contact .container .info {
+      order: -1;
+      text-align: center;
+    }
+  }
+  .contact .container .content .info h4{
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  .contact .container .content .info *:not(h4) {
+    color:  #bbb7b9;
+  }
+  .contact .container .content .info h4:last-of-type {
+    margin-top: 110px;
+  }
+  @media (max-width: 767px) {
+    .contact .container .content .info h4:last-of-type {
+      margin-top: 30px;
+    }
+  }
+  .contact .container .content .info span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .contact .container .content .info address {
+    font-style: normal;
+    line-height: 1.6;
+  }
+  /* End Contact */
